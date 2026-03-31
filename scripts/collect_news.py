@@ -85,15 +85,15 @@ continue
 return []
 
 def parse_date(entry) -> Optional[datetime]:
-"""解析 RSS 条目的发布时间"""
-try:
-if hasattr(entry, 'published_parsed') and entry.published_parsed:
-return datetime(*entry.published_parsed[:6])
-elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
-return datetime(*entry.updated_parsed[:6])
-except:
-pass
-return None
+    """解析 RSS 条目的发布时间"""
+    try:
+        if hasattr(entry, 'published_parsed') and entry.published_parsed:
+            return datetime(*entry.published_parsed[:6])
+        elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
+            return datetime(*entry.updated_parsed[:6])
+    except Exception:
+        pass
+    return None
 
 def filter_recent_entries(entries: List[Dict]) -> List[Dict]:
 """过滤出过去24小时内的条目"""

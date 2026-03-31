@@ -24,10 +24,6 @@ RSSHUB_MIRRORS = [
 
 # 新闻源配置
 NEWS_SOURCES = {
-    "国内重大政策": {
-        "route": "/gov/zhengce/zhengceku",
-        "description": "中国政府网政策文件"
-    },
     "国内要闻": {
         "route": "/news/whxw",
         "description": "新华网综合新闻"
@@ -55,18 +51,6 @@ NEWS_SOURCES = {
     "科技商业": {
         "route": "/huxiu/article",
         "description": "虎嗅科技商业"
-    },
-    "极客公园": {
-        "route": "/geekpark",
-        "description": "极客公园科技"
-    },
-    "第一财经": {
-        "route": "/yicai",
-        "description": "第一财经财经"
-    },
-    "微博热搜": {
-        "route": "/weibo/search/hot",
-        "description": "微博热搜榜"
     },
 }
 
